@@ -1,5 +1,7 @@
 package clases;
 
+import java.util.Arrays;
+
 /**
  * En esta clase, llamada Array, tenemos como atributo un array de enteros 
  * y un método para realizar la búsqueda de un número y saber si está o no en el array.
@@ -30,5 +32,11 @@ public class Array {
 			}
 		}
 		return sw;
+	}
+	
+	public void incrementaValor() {
+		for (int i = 0; i < array.length; i++) {
+			array[i] = array[i] + 1;
+		}
 	}
 }
